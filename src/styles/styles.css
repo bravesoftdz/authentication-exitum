@@ -1,0 +1,253 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Nunito:300,400,400i,600,600i,700,700i,800,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container-exlg {
+  width: 93%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+}
+
+.container-ex {
+  width: 1400px;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+nav {
+  position: absolute !important;
+  background: transparent !important;
+  width: 100%;
+  top: 0;
+  z-index: 10;
+}
+
+nav .container-exlg a {
+  color: #fff;
+  font-size: 40px;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+nav .container-exlg a:hover {
+  color: #77FAB3;
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
+.navbar-collapse ul li.nav-item a {
+  font-size: 20px !important;
+  text-decoration: none;
+}
+
+.banner {
+  position: relative;
+  background: #2C0969;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+}
+
+.banner .container-banner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.banner .container-banner .info-banner {
+  margin-top: 200px;
+}
+
+.banner .container-banner .info-banner h2 {
+  color: #fff;
+  font-family: 'Poppins';
+  font-weight: 200;
+}
+
+.banner .container-banner .info-banner h2 span {
+  color: #77FAB3;
+  font-weight: 700;
+  line-height: 2;
+}
+
+.banner .container-banner .info-banner .btn-register {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.banner .container-banner .info-banner .btn-register button.btn-signup {
+  padding: 10px 25px;
+  background: #CC2A6D;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#6F127C), to(#CC2A6D));
+  background: linear-gradient(to right, #6F127C, #CC2A6D);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border-radius: 10px;
+  border: none;
+  color: #fff;
+  outline: none;
+  font-family: 'Poppins';
+  font-size: 20px;
+}
+
+.banner .container-banner .img-banner img {
+  width: 500px;
+  height: auto;
+  margin-top: 200px;
+}
+
+.modal {
+  background-image: url(../image/banner-desenfocado.png);
+}
+
+.modal .modal-dialog {
+  margin-top: 100px;
+  max-width: auto;
+}
+
+.modal .modal-dialog .modal-content {
+  border-radius: 10px;
+  -webkit-box-shadow: 0 4px 20px 0 rgba(131, 118, 118, 0.14), 0 7px 10px -5px rgba(94, 40, 189, 0.4);
+          box-shadow: 0 4px 20px 0 rgba(131, 118, 118, 0.14), 0 7px 10px -5px rgba(94, 40, 189, 0.4);
+}
+
+.modal .modal-dialog .modal-content .welcome-ex {
+  margin: 0 auto;
+  width: 400px;
+  text-align: center;
+}
+
+.modal .modal-dialog .modal-content .welcome-ex span {
+  font-family: 'Nunito';
+  text-transform: uppercase;
+}
+
+.modal .modal-dialog .modal-content .welcome-ex h2 {
+  font-family: 'Poppins';
+  font-size: 50px;
+}
+
+.modal .modal-dialog .modal-content .welcome-ex p {
+  font-family: 'Nunito';
+  color: #8f8a8a;
+  font-weight: 100;
+}
+
+.bg-register {
+  background-image: url(../image/banner-register.png);
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: auto;
+}
+
+.form-group {
+  text-align: center;
+}
+
+.form-group input {
+  width: 80%;
+  padding: 10px;
+  border-radius: 7px;
+  border: 1px solid #d3c9c9;
+  font-family: 'Poppins';
+  font-size: 12px;
+  font-weight: 200;
+  outline: none;
+}
+
+.send-submit {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.send-submit button.submit-signup {
+  width: 80%;
+  padding: 10px;
+  background: #2C0969;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#2C0969), to(#2C0969));
+  background: linear-gradient(to right, #2C0969, #2C0969);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border-radius: 10px;
+  border: none;
+  color: #fff;
+  outline: none;
+  font-family: 'Poppins';
+  font-size: 15px;
+  font-weight: 100;
+  text-transform: uppercase;
+  -webkit-box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(44, 9, 105, 0.4);
+          box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.14), 0 7px 10px -5px rgba(44, 9, 105, 0.4);
+}
+
+.border-space {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.border-space .to {
+  text-align: center;
+  font-family: 'Nunito';
+  color: #afacac;
+}
+
+.socials {
+  width: 80%;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+
+.socials .kep-login-facebook {
+  padding: 10px 15px;
+  border-radius: 50% !important;
+  font-family: 'Poppins';
+  font-weight: 400;
+  text-transform: capitalize;
+}
+
+.socials .fab {
+  color: #1e6ace;
+  font-size: 20px;
+  padding: 10px 15px;
+  border-radius: 50%;
+}
+
+.socials .google {
+  margin-left: 40px;
+  width: 43px;
+  outline: none;
+  height: 43px;
+  border: 1px solid #afacac !important;
+  border-radius: 50% !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+.socials .google div {
+  background: transparent !important;
+}
+/*# sourceMappingURL=styles.css.map */

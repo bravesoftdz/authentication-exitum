@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nunito:300,400,400i,600,600i,700,700i,800,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container-exlg {
+    width: 93%;
+    display: flex;
+    margin: 0 auto;
+}
+
+.container-ex {
+    width: 1400px;
+    padding-right: 15px;
+    padding-left: 15px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+nav {
+    position: absolute !important;
+    background: transparent !important;
+    width: 100%;
+    top: 0;
+    z-index: 10;
+    .container-exlg {
+        a {
+            color: #fff;
+            font-size: 40px;
+            transition: 1s;
+        }
+        a:hover {
+            color: #77FAB3;
+            transition: 1s;
+        }
+    }
+}
+
+.navbar-collapse {
+    ul {
+        li.nav-item {
+            a {
+                font-size: 20px !important;
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+.banner {
+    position: relative;
+    background: #2C0969;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    .container-banner {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .info-banner {
+            margin-top: 200px;
+            h2 {
+                color: #fff;
+                font-family: 'Poppins';
+                font-weight: 200;
+                span {
+                    color: #77FAB3;
+                    font-weight: 700;
+                    line-height: 2;
+                }
+            }
+            .btn-register {
+                display: flex;
+                button.btn-signup {
+                    padding: 10px 25px;
+                    background: #CC2A6D;  /* fallback for old browsers */
+                    background: -webkit-linear-gradient(to right, #6F127C, #CC2A6D);  /* Chrome 10-25, Safari 5.1-6 */
+                    background: linear-gradient(to right, #6F127C, #CC2A6D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+                    border-radius: 10px;
+                    border: none;
+                    color: #fff;
+                    outline: none;
+                    font-family: 'Poppins';
+                    font-size: 20px;
+                }
+            }
+        }
+        .img-banner {
+            img {
+                width: 500px;
+                height: auto;
+                margin-top: 200px;
+            }
+        }
+    }
+}
+
+.modal {
+    background-image: url(../image/banner-desenfocado.png);
+    .modal-dialog {
+        margin-top: 100px;
+        max-width: auto;
+        .modal-content {
+            border-radius: 10px;
+            box-shadow: 0 4px 20px 0 rgba(131, 118, 118, 0.14), 0 7px 10px -5px rgba(94, 40, 189, 0.4);
+            .welcome-ex {
+                margin: 0 auto;
+                width: 400px;
+                text-align: center;
+                span {
+                    font-family: 'Nunito';
+                    text-transform: uppercase;
+                }
+                h2 {
+                    font-family: 'Poppins';
+                    font-size: 50px;
+                }
+                p {
+                    font-family: 'Nunito';
+                    color: rgb(143, 138, 138);
+                    font-weight: 100;
+                }
+            }
+        }  
+    }
+}
+
+.bg-register {
+    background-image: url(../image/banner-register.png);
+    background-size: cover;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    height: auto;
+}
+
+.form-group {
+    text-align: center;
+    input {
+        width: 80%;
+        padding: 10px;
+        border-radius: 7px;
+        border: 1px solid #d3c9c9;
+        font-family: 'Poppins';
+        font-size: 12px;
+        font-weight: 200;
+        outline: none;
+    }
+}
+
+.send-submit {
+    text-align: center;
+    margin-bottom: 20px;
+    button.submit-signup {
+        width: 80%;
+        padding: 10px;
+        background: #2C0969;  /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #2C0969, #2C0969);  /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #2C0969, #2C0969); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        border-radius: 10px;
+        border: none;
+        color: #fff;
+        outline: none;
+        font-family: 'Poppins';
+        font-size: 15px;
+        font-weight: 100;
+        text-transform: uppercase;
+        box-shadow: 0 4px 20px 0 rgba(0,0,0,.14), 0 7px 10px -5px rgba(44, 9, 105, 0.4);
+    }
+    
+}
+.border-space {
+    width: 80%;
+    margin: 0 auto;
+    .to {
+        text-align: center;
+        font-family: 'Nunito';
+        color: #afacac;
+    }
+}
+.socials {
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 20px;
+    .kep-login-facebook {
+        padding: 10px 15px;
+        border-radius: 50% !important;
+        font-family: 'Poppins';
+        font-weight: 400;
+        text-transform: capitalize;
+    }
+    .fab {
+        color: rgb(30, 106, 206);
+        font-size: 20px;
+        padding: 10px 15px;
+        border-radius: 50%;
+    }
+    .google {
+        margin-left: 40px;
+        width: 43px;
+        outline: none;
+        height: 43px;
+        border: 1px solid #afacac !important;
+        border-radius: 50% !important;
+        box-shadow: none !important;
+        div {
+            background: transparent !important;
+        }
+    }
+}

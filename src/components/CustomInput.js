@@ -11,7 +11,6 @@ export default class CustomInput extends Component {
                     name={this.props.name}
                     id={this.props.id}
                     placeholder={this.props.placeholder}
-                    className="form-control"
                     type={this.props.type}
                     value = {value}
                     onChange ={onChange}
