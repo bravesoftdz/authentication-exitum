@@ -13,7 +13,7 @@ import reducers from './reducers'
 
 import SignUp from './components/SignUp'
 import SignIn from './components/SignIn'
-import Dashboard from './components/Dashboard'
+import Dashboard from './components/Dashboard/Dashboard'
 
 import * as serviceWorker from './serviceWorker';
 

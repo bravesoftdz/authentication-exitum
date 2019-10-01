@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,500,500i,600,600i,700&display=swap');
 @import url('https://fonts.googleapis.com/css?family=Nunito:300,400,400i,600,600i,700,700i,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,500i,700,700i,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400,500,500i,700,700i,900|Ubuntu:300,300i,400,400i,500,700&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,400i,500,500i,600,700&display=swap');
 
 * {
     margin: 0;
@@ -50,9 +53,296 @@ nav {
     }
 }
 
+// Dashboard
+
+
+// a {
+//     color: #C2C2C2;
+//     .option-exitum {
+//         display: flex;
+//         align-items: center;
+//         .icon-add {
+//             margin-right: 30px;
+//             margin-left: 13px;
+//             color: #C2C2C2 !important;
+//             g {
+//                 path {
+//                     fill: #C2C2C2 !important;
+//                     transition: 1s;
+//                 }
+//                 rect {
+//                     fill: #C2C2C2 !important;
+//                     transition: 1s;
+//                 }
+//             }
+//         }
+//         .icon-rocket {
+//             margin-right: 30px;
+//             margin-left: 13px;
+//             color: #C2C2C2 !important;
+//             g {
+//                 path#Path_596,#Path_597,#Path_598,#Path_599,#Path_600,#Path_601,#Path_603,#Path_604,#Path_605 {
+//                     fill : #C2C2C2 !important;
+//                     transition: 1s;
+//                 }
+//             }
+//         }
+//         p {
+//             margin-top: 18px;
+//             font-size: 16px;
+//             font-family: 'Poppins'
+//         }
+//     }
+// }
+// a.active {
+//     color: #376EF9 !important;
+//     background-color: #fff !important;
+//     font-size: 16px !important;
+//     .option-exitum {
+//         .icon-add {
+//             margin-right: 30px;
+//             margin-left: 13px;
+//             color: #376EF9 !important;
+//             g {
+//                 path {
+//                     fill: #376EF9 !important;
+//                 }
+//                 rect {
+//                     fill: #376EF9 !important;
+//                 }
+//             }
+//         }
+//         .icon-rocket {
+//             margin-right: 30px;
+//             margin-left: 13px;
+//             color: #C2C2C2 !important;
+//             g {
+//                 path#Path_596,#Path_597,#Path_598,#Path_599,#Path_600,#Path_601,#Path_603,#Path_604,#Path_605 {
+//                     fill : #376EF9 !important;
+//                 }
+//             }
+//         }
+//     }
+// }
+
+//* Fin del Dashboard *//
+
+.item {
+    position: absolute;
+    z-index: 1;
+    transform: matrix(0.99, 0.1, -0.1, 0.99, 0, 0);
+}
+
+.square-1 {
+    top: 244px;
+    left: 1163px;
+    z-index: 1024;
+    display: inline-block;
+    transform: translate3d(0px,-250px,80px);
+    animation: levitate 8s ease-in-out infinite alternate;
+}
+
+.square-1:before {
+    content: '';
+    position: absolute;
+    left: 60px;
+    top: -8px;
+    background: transparent;
+    box-shadow: 0px 70px 18px 10px rgba(255, 255, 255,0.4), 0 70px 18px 10px rgba(255,255,255,0.1);
+    transform: matrix(0.99, 0.1, -0.1, 0.89, 10, 10);
+}
+
+.rectangle-1 {
+    top: 462px;
+    left: 1529px;
+    z-index: 1024;
+    display: inline-block;
+    transform: translate3d(0px,150px,10px);
+    animation: levitate 8s ease-in-out infinite alternate;
+}
+
+.rectangle-1:before {
+    content: '';
+    position: absolute;
+    left: 50px;
+    top: -14px;
+    background: transparent;
+    box-shadow: 0px 70px 18px 10px rgba(255, 255, 255,0.4), 0 70px 18px 10px rgba(255,255,255,0.1);
+    transform: matrix(0.99, 0.1, -0.1, 0.89, 10, 10);
+}
+
+.circle-1 {
+    top: 433px;
+    left: 1687px;
+    width: 53px;
+    height: 53px;
+    z-index: 1024;
+    display: inline-block;
+    transform: translate3d(0px,350px,10px);
+    animation: levitate 8s ease-in-out infinite alternate;
+}
+
+.circle-1:before {
+    content: '';
+    position: absolute;
+    left: 50px;
+    top: -14px;
+    background: transparent;
+    box-shadow: 0px 70px 18px 10px rgba(255, 255, 255,0.4), 0 70px 18px 10px rgba(255,255,255,0.1);
+    transform: matrix(0.99, 0.1, -0.1, 0.89, 10, 10);
+}
+
+.square-2 {
+    top: 307px;
+    left: 683px;
+    width: 13px !important;
+    height: 13px !important;
+    z-index: 1024;
+    display: inline-block;
+    transform: translate3d(0px,-150px,-80px);
+    animation: levitate 8s ease-in-out infinite alternate;
+}
+
+.square-2:before {
+    content: '';
+    position: absolute;
+    left: 40px;
+    top: -30px;
+    background: transparent;
+    box-shadow: 0px 70px 18px 10px rgba(255, 255, 255,0.4), 0 70px 18px 10px rgba(255,255,255,0.1);
+    transform: matrix(0.99, 0.1, -0.1, 0.89, 10, 10);
+}
+
+.rectangle-2 {
+    top: 389px;
+    left: 619px;
+    width: 53px;
+    height: 53px;
+    z-index: 1024;
+    display: inline-block;
+    transform: translate3d(0px,-200px,10px);
+    animation: levitate 8s ease-in-out infinite alternate;
+}
+
+.rectangle-2:before {
+    content: '';
+    position: absolute;
+    left: 40px;
+    top: -30px;
+    background: transparent;
+    box-shadow: 0px 70px 18px 10px rgba(255, 255, 255,0.4), 0 70px 18px 10px rgba(255,255,255,0.1);
+    transform: matrix(0.99, 0.1, -0.1, 0.89, 10, 10);
+}
+
+.circle-2 {
+    top: 551px;
+    left: 662px;
+    width: 53px;
+    height: 53px;
+    z-index: 1024;
+    display: inline-block;
+    transform: translate3d(0px,-50px,10px);
+    animation: levitate 8s ease-in-out infinite alternate;
+}
+
+.circle-2:before {
+    content: '';
+    position: absolute;
+    left: 40px;
+    top: -30px;
+    background: transparent;
+    box-shadow: 0px 70px 18px 10px rgba(255, 255, 255,0.4), 0 70px 18px 10px rgba(255,255,255,0.1);
+    transform: matrix(0.99, 0.1, -0.1, 0.89, 10, 10);
+}
+
+.square-3 {
+    top: 736px;
+    left: 1756px;
+    width: 13px !important;
+    height: 13px !important;
+    z-index: 1024;
+    display: inline-block;
+    transform: translate3d(0px,-150px,80px);
+    animation: levitate 8s ease-in-out infinite alternate;
+}
+
+.square-3:before {
+    content: '';
+    position: absolute;
+    left: 40px;
+    top: -30px;
+    background: transparent;
+    box-shadow: 0px 70px 18px 10px rgba(255, 255, 255,0.4), 0 70px 18px 10px rgba(255,255,255,0.1);
+    transform: matrix(0.99, 0.1, -0.1, 0.89, 10, 10);
+}
+
+.rectangle-3 {
+    top: 631px;
+    left: 54px;
+    width: 53px;
+    height: 53px;
+    z-index: 1024;
+    display: inline-block;
+    transform: translate3d(0px,-200px,10px);
+    animation: levitate 8s ease-in-out infinite alternate;
+}
+
+.rectangle-3:before {
+    content: '';
+    position: absolute;
+    left: 40px;
+    top: -30px;
+    background: transparent;
+    box-shadow: 0px 70px 18px 10px rgba(255, 255, 255,0.4), 0 70px 18px 10px rgba(255,255,255,0.1);
+    transform: matrix(0.99, 0.1, -0.1, 0.89, 10, 10);
+}
+
+.circle-3 {
+    top: 216px;
+    left: 160px;
+    width: 53px;
+    height: 53px;
+    z-index: 1024;
+    display: inline-block;
+    transform: translate3d(0px,-50px,100px);
+    animation: levitate 4s ease-in-out infinite alternate;
+}
+
+.circle-3:before {
+    content: '';
+    position: absolute;
+    left: 40px;
+    top: -30px;
+    background: transparent;
+    box-shadow: 0px 70px 18px 10px rgba(255, 255, 255,0.4), 0 70px 18px 10px rgba(255,255,255,0.1);
+    transform: matrix(0.99, 0.1, -0.1, 0.89, 10, 10);
+}
+
+@keyframes levitate {
+    0% {
+        transform: translate3d(10,10%,10) rotateX(368deg)
+    }
+    100% {
+        transform: translate3d(0,-42%,0)
+    }
+}
+
+.capsule {
+    animation: rotate 4s ease-in-out infinite alternate;
+}   
+
+@keyframes rotate {
+    0% {
+        transform: translate3d(10,10%,10) rotateX(368deg)
+    }
+    100% { 
+        transform: translate3d(10%,-0%,0)
+    }
+}
+
 .banner {
     position: relative;
-    background: #2C0969;
+    background: #093CC3;
     background-size: cover;
     width: 100%;
     height: 100vh;
@@ -62,37 +352,48 @@ nav {
         align-items: center;
         .info-banner {
             margin-top: 200px;
+            font-family: 'Montserrat';
+            h3 {
+                text-align: left;
+                left: 90px;
+                color: #F3F300;
+                font-size: 80px;
+                position: relative;
+                line-height: 40px;
+            }
             h2 {
                 color: #fff;
-                font-family: 'Poppins';
                 font-weight: 200;
+                font-size: 60px;
+                line-height: 64px;
+                margin-bottom: 40px;
                 span {
-                    color: #77FAB3;
-                    font-weight: 700;
-                    line-height: 2;
+                    text-decoration: line-through #CD5DA3;
                 }
             }
             .btn-register {
                 display: flex;
                 button.btn-signup {
-                    padding: 10px 25px;
-                    background: #CC2A6D;  /* fallback for old browsers */
-                    background: -webkit-linear-gradient(to right, #6F127C, #CC2A6D);  /* Chrome 10-25, Safari 5.1-6 */
-                    background: linear-gradient(to right, #6F127C, #CC2A6D); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-                    border-radius: 10px;
+                    padding: 22px 25px;
+                    background: transparent linear-gradient(180deg, #FFFF00 0%, #cece2f 100%) 0% 0% no-repeat padding-box;
+                    border-radius: 42px;
                     border: none;
                     color: #fff;
                     outline: none;
                     font-family: 'Poppins';
-                    font-size: 20px;
+                    font-size: 26px;
                 }
             }
         }
         .img-banner {
-            img {
-                width: 500px;
+            display: flex;
+            justify-content: flex-end;
+            margin-top: 0px;
+            svg {
+                position: absolute;
+                right: 200px;
+                width: 200px;
                 height: auto;
-                margin-top: 200px;
             }
         }
     }
